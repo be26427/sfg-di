@@ -5,10 +5,10 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 @Controller
-public class I18nController {
+public class I18NController {
     private final GreetingService service;
 
-    public I18nController(@Qualifier ("i18nService") GreetingService service) {
+    public I18NController(@Qualifier("i18nService") GreetingService service) {
         this.service = service;
     }
 
