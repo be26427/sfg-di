@@ -12,7 +12,7 @@ public class SfgDiApplication {
 
 		ApplicationContext ctx = SpringApplication.run(SfgDiApplication.class, args);
 
-		I18NController i18nController = (I18NController) ctx.getBean("i18nController");
+		I18NController i18nController = (I18NController) ctx.getBean("i18NController");
 		System.out.println(i18nController.sayHello());
 
 		TestController control = (TestController) ctx.getBean("testController");
